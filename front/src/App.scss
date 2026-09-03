@@ -13,5 +13,12 @@
 }
 
 .container{ 
-    margin:0px 100px;
+    margin:0px 50px;
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("./assets/fonts/SFProDisplay-Regular.woff2") format("woff2");
+  font-weight: 200;
+  font-style: normal;
 }
