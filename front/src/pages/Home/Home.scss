@@ -5,17 +5,11 @@
 .home-page-bcg {
   width: 100%;
   height: 100vh;
-  background-image:url("/images/image_header.png");
+  background-image:url("/images/header.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   
-}
-.home-page-bcg::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.5);
 }
 
 .home-page-bcg > * {
@@ -24,7 +18,7 @@
 }
 .header{
     display: flex;
-    gap:30px
+    gap:30px;
 }
 
 .navlist{
@@ -34,9 +28,6 @@ justify-content: space-evenly;
 list-style: none;
 width: 600px;
 height: 70px;
-background-color: #D9D9D9;
-border-bottom-left-radius: 50px;
-border-bottom-right-radius: 50px;
 font-size: 20px;
 padding-top: 30px;
 margin: 0 140px;
@@ -46,8 +37,11 @@ li a{
 text-decoration: none;
 font-size: 20px;
 color:#1D1D1D ;
+transition: 0.3s;
 }
-
+li a:hover{
+    color: var(--primary-color);
+}
 .app_btn{
     width: 194px;
     height: 57px;
@@ -57,21 +51,26 @@ color:#1D1D1D ;
     font-size: 24px;
     color: white;
     margin-top: 15px;
+    transition: 0.6s;
 }
-
+.app_btn:hover{
+    border-color:var(--primary-color) ;
+    color: var(--primary-color);
+}
 .app-icon{
 font-size: 24px;
 }
 .main-title{
-    max-width: 1000px;
+    line-height: 90px;
+    max-width: 800px;
     margin-top:3%;
-    font-size:110px;
+    font-size:95px;
     color: #FFFFFF;
 }
 
 .main-text{
     color: #FFFFFF;
-    font-size: 36px;
+    font-size: 35px;
     max-width: 480px;
     height: 140px;
 }

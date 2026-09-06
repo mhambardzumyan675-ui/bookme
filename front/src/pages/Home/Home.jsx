@@ -1,6 +1,8 @@
 import React from 'react'
 import './Home.scss'
 import { Link } from "react-router-dom";
+import SearchBar from "../../components/SearchBar/SearchBar";
+
 
 const Home = () => {
   return (
@@ -28,6 +30,7 @@ const Home = () => {
     <div className="container">
       <section className="home-main">
         <h1 className='main-title'>Explore your place to stay</h1>
+        <SearchBar/>
         <div className="main-txt-group">
           <div className="txt-border"></div>
         <p className='main-text'>We provide a variety of the best lodging accommodations for those of you who need it.</p>
