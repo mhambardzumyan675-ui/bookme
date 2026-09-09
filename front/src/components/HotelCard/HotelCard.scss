@@ -1,0 +1,33 @@
+
+
+.hotel-card{
+   display:flex;
+   flex-direction: column;
+   gap: 10px;
+}
+.card-img{
+    position: relative;
+}
+.hotel-rating{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 65px;
+    height: 28px;
+    border-radius: 60px;
+    background-color: rgba(201, 190, 179, 0.5);
+    position: absolute;
+    bottom: 300px;
+    left: 20px;
+    color: white;
+    font-size: 14px;
+}
+.hotel-name{
+    font-size: 18px;    
+}
+.hotel-info{
+    display: flex;
+    gap: 15px;
+    color: #C9BEB3;
+}

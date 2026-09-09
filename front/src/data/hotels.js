@@ -1,8 +1,9 @@
+
 const hotels=[
     {
         id:1,
         images:[
-            'images/hotels/villakella',
+            '/images/hotels/villakella.png',
         ],
         rating:4.93,
         name:'Villa, Kemah Tinggi',
@@ -13,7 +14,7 @@ const hotels=[
     {
         id:2,
         images:[
-            'images/hotels/villakuta',
+            '/images/hotels/villakuta.png',
         ],
         rating:4.93,
         name:'Villa, Kuta Premiere',
@@ -24,7 +25,7 @@ const hotels=[
   {
         id:3,
         images:[
-            'images/hotels/villa3',
+            '/images/hotels/villa3.png',
         ],
         rating:4.93,
         name:'Villa, Kuta Premiere',
@@ -35,7 +36,7 @@ const hotels=[
       {
         id:4,
         images:[
-            'images/hotels/villakuta',
+            '/images/hotels/villakella.png',
         ],
         rating:5.0,
         name:'Villa, Kuta Premiere',
@@ -46,7 +47,7 @@ const hotels=[
       {
         id:5,
         images:[
-            'images/hotels/villakuta',
+            '/images/hotels/villa3.png',
         ],
         rating:4.93,
         name:'Villa, Kuta Premiere',
@@ -55,3 +56,5 @@ const hotels=[
         price:920,
     }
 ]
+
+export default hotels

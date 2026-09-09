@@ -1,12 +1,36 @@
-import React from 'react'
+import './HotelCard.scss'
 
-const HotelCard = () => {
-    const hotels=[
-        
-    ]
-    
-  return (
-    <div>HotelCard</div>
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBed } from "@fortawesome/free-solid-svg-icons";
+import { faRulerCombined } from "@fortawesome/free-solid-svg-icons";
+import { faStar } from "@fortawesome/free-solid-svg-icons";
+
+const HotelCard = ({images,name,rating,bed,square,price}) => {
+ 
+  return ( 
+    <div className='hotel-card'>
+      <div className='card-img'>
+        <img src={images} alt={name}></img>
+        <div className='hotel-rating'>
+          <FontAwesomeIcon icon={faStar} />
+          <p className='rating-icon'>{rating}</p>
+        </div>
+        </div>
+      <div className='hotel-names'>
+        <h3 className='hotel-name'>{name}</h3>
+      </div>
+      <div className='hotel-info'>
+        <p className='hotel-bed'>
+          <FontAwesomeIcon icon={faBed} />
+          <span>{bed} bedrooms</span>
+        </p>
+        <p className='hotel-square'>
+          <FontAwesomeIcon icon={faRulerCombined} />
+          <span>{square} m²</span>
+        </p>
+        <p className='hotel-price'>${price} per month</p>
+      </div>
+    </div>
   )
 }
 
