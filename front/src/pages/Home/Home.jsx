@@ -39,6 +39,8 @@ const Home = () => {
          </div>
         <h6 className='small-text'>Don't worry about the quality of the service.</h6>
       </section>
+      </div>
+      </div>
       <section className='hotels'>
         <div className="container">
           <div className='hotels-title'>
@@ -57,7 +59,10 @@ const Home = () => {
         />
       ))}
     </div>
-    <div className="get-hotels-info">
+    </div>
+    <div className="get-hotels-bcg">
+      <div className='container'>
+        <div className="get-hotels-info">
       <div className="see-hotels">
         <h3 className='see-title'>See it all</h3>
         <p className='see-text'>From local hotels to global brands, discover millions of rooms all around the world.</p>
@@ -71,10 +76,9 @@ const Home = () => {
         <p className='get-text'>We've special deals with the world's leading hotels and we these savings with you.</p>
       </div>
     </div>
-        </div>
+    </div>
+    </div>
       </section>
-    </div>
-    </div>
     </div>
     </>
   )

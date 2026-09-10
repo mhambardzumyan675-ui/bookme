@@ -21,14 +21,17 @@ const HotelCard = ({images,name,rating,bed,square,price}) => {
       </div>
       <div className='hotel-info'>
         <p className='hotel-bed'>
-          <FontAwesomeIcon icon={faBed} />
+          <FontAwesomeIcon  className='bed-icon' icon={faBed} />
           <span>{bed} bedrooms</span>
         </p>
         <p className='hotel-square'>
-          <FontAwesomeIcon icon={faRulerCombined} />
+          <FontAwesomeIcon className='square-icon' icon={faRulerCombined} />
           <span>{square} m²</span>
         </p>
-        <p className='hotel-price'>${price} per month</p>
+        <div className="prices-permonth">
+        <p className='hotel-price'>${price} </p>
+        <span className='price-span'>per month</span>
+        </div>
       </div>
     </div>
   )
