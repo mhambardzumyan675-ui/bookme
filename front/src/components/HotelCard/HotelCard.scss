@@ -23,6 +23,7 @@
     color: white;
     font-size: 14px;
 }
+
 .hotel-name{
     font-size: 18px;   
     font-weight: 600; 
@@ -30,17 +31,27 @@
 }
 .hotel-info{
     display: flex;
-    gap: 20px;
+    gap: 10px;
     color: #C9BEB3;
     margin-left: 5px;
+}
+.hotel-bed{
+    display: flex;
+    gap: 5px;
+}
+.hotel-square{
+    display: flex;
+    gap: 5px;
 }
 .prices-permonth{
     position: relative;
     bottom:30px;
-    left: 25px;
+    margin-left: 30px;
+    
 }
 .hotel-price{
     color: #C49C74;
     font-size:25px;
     font-weight: 600;
+    margin-left: 5px;
 }

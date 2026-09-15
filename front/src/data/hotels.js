@@ -38,7 +38,7 @@ const hotels=[
         images:[
             '/images/hotels/villakella.png',
         ],
-        rating:5.0,
+        rating:5,
         name:'Villa, Kuta Premiere',
         bed:5,
         square:214,
@@ -51,7 +51,7 @@ const hotels=[
         ],
         rating:4.93,
         name:'Villa, Kuta Premiere',
-        bed:5,
+        bed:2,
         square:214,
         price:920,
     }

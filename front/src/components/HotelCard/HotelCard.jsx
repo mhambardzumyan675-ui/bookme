@@ -5,9 +5,13 @@ import { faBed } from "@fortawesome/free-solid-svg-icons";
 import { faRulerCombined } from "@fortawesome/free-solid-svg-icons";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 
+
 const HotelCard = ({images,name,rating,bed,square,price}) => {
  
+
   return ( 
+    <>
+    
     <div className='hotel-card'>
       <div className='card-img'>
         <img src={images} alt={name}></img>
@@ -34,6 +38,8 @@ const HotelCard = ({images,name,rating,bed,square,price}) => {
         </div>
       </div>
     </div>
+
+    </>
   )
 }
 
