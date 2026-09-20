@@ -2,9 +2,8 @@ import React from 'react'
 import './Home.scss'
 import { Link } from "react-router-dom";
 import SearchBar from "../../components/SearchBar/SearchBar";
-import HotelCard from '../../components/HotelCard/HotelCard';
-import hotels from "../../data/hotels";
 import HotelSlider from '../../components/HotelSlider/HotelSlider';
+import Apartments from '../../components/Apartments/Apartments';
 
 
 const Home = () => {
@@ -45,6 +44,7 @@ const Home = () => {
       
     </div>
     <HotelSlider/>
+    <Apartments/>
     </>
   )
 }

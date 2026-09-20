@@ -12,16 +12,27 @@ const HotelSlider = () => {
 const [currentIndex, setCurrentIndex] = useState(0);
 
 const nextSlide = () => {
-    if (currentIndex < hotels.length - 1) {
-      setCurrentIndex(currentIndex + 1);
-    }
-  };
+  setCurrentIndex((currentIndex + 1) % hotels.length);
+};
 
 const prevSlide = () => {
-    if (currentIndex > 0) {
-      setCurrentIndex(currentIndex - 1);
-    }
-  };
+  setCurrentIndex(
+    (currentIndex - 1 + hotels.length) % hotels.length
+  );
+};
+
+const visibleHotels = Array.from({ length: 5 }, (_, i) => {
+  return hotels[(currentIndex + i) % hotels.length];
+});
+
+const getCardClass = (index) => {
+  if (index === 0 || index === 4) {
+    return "hotel-slide small";
+  }
+
+  return "hotel-slide large";
+};
+
   return (
     <>
        <section className='hotels'>
@@ -35,27 +46,29 @@ const prevSlide = () => {
           <button className='prevhotelslider' onClick={prevSlide}>
             <FontAwesomeIcon  className='previoushotel' icon={faChevronLeft} />
           </button>
+          <button className='nexthotelslider' onClick={nextSlide}>
+            <FontAwesomeIcon className='nexthotel' icon={faChevronRight} />
+          </button>
         </div>
         <div className="hotels-viewport">
-         <div className="hotel-cards"  style={{ transform: `translateX(-${currentIndex * 270}px)`}}>
-      {hotels.map((hotel) => (
-        <HotelCard
-          key={hotel.id}
-          images={hotel.images}
+         <div className='hotel-cards'>
+      {visibleHotels.map((hotel,index) => (
+        <div className={getCardClass(index)}
+        key={hotel.id}>
+        <HotelCard 
+         {...hotel}
+          images={hotel.images[0]}
           name={hotel.name}
           rating={hotel.rating}
           bed={hotel.bed}
           square={hotel.square}
           price={hotel.price}
         />
+        </div>
       ))}
     </div>
     </div>
-    <div className="cardslide">
-    <button className='nexthotelslider' onClick={nextSlide}>
-            <FontAwesomeIcon className='nexthotel' icon={faChevronRight} />
-          </button>
-          </div>
+    
     </div>
     </div>
     <div className="get-hotels-bcg">

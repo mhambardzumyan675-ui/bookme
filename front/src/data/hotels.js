@@ -54,6 +54,17 @@ const hotels=[
         bed:2,
         square:214,
         price:920,
+    },
+    {
+        id:6,
+        images:[
+            '/images/hotels/villa3.png',
+        ],
+        rating:4.93,
+        name:'Villa, Kuta Premiere',
+        bed:2,
+        square:214,
+        price:920,
     }
 ]
 

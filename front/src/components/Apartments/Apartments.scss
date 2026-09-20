@@ -1,0 +1,44 @@
+.apart-content{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 5%;
+    padding-inline: 6%;
+}
+.apart-title{
+    font-size: 54px;
+    background: linear-gradient(
+        90deg,
+        #222222,
+        #777676
+    );
+    background-clip:text ;
+    color: transparent;
+}
+
+.apart-text{
+    max-width: 60%;
+    font-size: 30px;
+}
+
+.apart-date{
+    display: flex;
+    justify-content: end;
+    font-size: 75px;
+    font-weight:500;
+    background: linear-gradient(
+    90deg,
+    #b8b8b8 0%,
+    #eeeeee 50%,
+    #b8b8b8 100%
+    );
+    background-clip:text ;
+    color: transparent;
+    position: relative;
+    bottom: 100px;
+}
+
+.apartment-cards{
+    display: flex;
+    justify-content: space-between;
+}
